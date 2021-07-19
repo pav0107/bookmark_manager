@@ -5,6 +5,7 @@
         "lines": [
           1,
           1,
+          1,
           null,
           1,
           1,
@@ -15,12 +16,48 @@
           1,
           null,
           null,
+          1,
+          1,
+          1,
+          null,
+          null,
           null,
           1,
           null
         ]
       },
-      "/Users/Pav/Desktop/Makers/Week 4/Bookmark_Manager/spec/testing_infrastructure_spec.rb": {
+      "/Users/Pav/Desktop/Makers/Week 4/Bookmark_Manager/lib/bookmark.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/Pav/Desktop/Makers/Week 4/Bookmark_Manager/spec/bookmark_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/Pav/Desktop/Makers/Week 4/Bookmark_Manager/spec/features/testing_infrastructure_spec.rb": {
         "lines": [
           1,
           1,
@@ -30,8 +67,21 @@
           null,
           null
         ]
+      },
+      "/Users/Pav/Desktop/Makers/Week 4/Bookmark_Manager/spec/features/viewing_bookmarks_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1626697461
+    "timestamp": 1626705838
   }
 }
