@@ -6,13 +6,10 @@ feature 'Add new bookmark' do
   end
 
   scenario 'add new bookmark' do
-    visit('/bookmarks/add')
-
+    visit('/bookmarks/new')
     fill_in('url', with: 'http://www.youtube.com')
-
     click_button('Submit')
 
     expect(page).to have_content "http://www.youtube.com"
   end
-
 end

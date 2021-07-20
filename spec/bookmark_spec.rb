@@ -21,13 +21,11 @@ describe Bookmark do
 
   describe '.create' do
     it 'should create a new bookmark' do
-      connection = PG.connect(dbname: 'bookmark_manager_test')
+      # connection = PG.connect(dbname: 'bookmark_manager_test')
 
       Bookmark.create(url: "http://www.youtube.com")
 
-      bookmarks = Bookmark.all
-
-      expect(bookmarks).to include "http://www.youtube.com"
+      expect(Bookmark.all).to include "http://www.youtube.com"
     end
   end
 end
