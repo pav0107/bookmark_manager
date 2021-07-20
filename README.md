@@ -1,11 +1,16 @@
-Bookmark Manager
+# Bookmark Manager
 
-User story 1
+This was the week 4 weekly challenge from Makers. The task was to build a web app that stores web bookmarks in a database.
+
+###User story for showing a list of bookmarks
+
+```
 As a user,
 So that I can quickly visit my favourite websites,
 I'd like the Bookmark Manager to display a list of bookmarks on its homepage
+```
 
-Domain model
+###Domain model
 
 ![Bookmark Manager domain model](./images/domain_model.png)
 
