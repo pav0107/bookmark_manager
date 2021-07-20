@@ -5,6 +5,10 @@ As a user,
 So that I can quickly visit my favourite websites,
 I'd like the Bookmark Manager to display a list of bookmarks on its homepage
 
+Domain model
+
+![Bookmark Manager domain model](./images/domain_model.png)
+
 To set up the database from scratch, do the following:
 
 1. Connect to psql, using the command psql postgres
