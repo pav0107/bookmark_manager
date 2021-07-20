@@ -4,6 +4,13 @@ describe Bookmark do
   let(:bookmarks) { ["http://www.makersacademy.com", "http://www.bbc.com", "http://www.google.com"] }
   describe '.all' do
     it 'returns the list of bookmarks' do
+      connection = PG.connect(dbname: 'bookmark_manager_test')
+
+    # Add the test data
+    connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com');")
+    connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.destroyallsoftware.com');")
+    connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.google.com');")
+      
       bookmarks = Bookmark.all
 
       expect(bookmarks).to include("http://www.makersacademy.com")
