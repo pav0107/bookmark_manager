@@ -31,6 +31,13 @@ class BookmarkManager < Sinatra::Base
     redirect '/bookmarks'
   end
 
+  enable :sessions, :method_override
+
+  delete '/bookmarks/:id' do
+    Bookmark.delete(id: params[:id])
+    redirect '/bookmarks'
+  end
+
   # start the server if ruby file executed directly
   run! if app_file == $0
 end
