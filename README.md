@@ -26,16 +26,17 @@ I would like to add the site's address and title to bookmark manager
 
 ```
 As a user
-So that I can delete a website
+So that I can delete a bookmark
 I would like to delete the site's address and title from bookmark manager
 ```
 
-To set up the database from scratch, do the following:
+### User story for updating bookmarks
 
-1. Connect to psql, using the command psql postgres
-2. Create the database using the psql command CREATE DATABASE bookmark_manager;
-3. Connect to the database using the pqsl command \c bookmark_manager;
-4. Run the query just saved in the file 01_create_bookmarks_table.sql
+```
+As a user
+So that I can update a bookmark
+I would like to update the site's address and title on bookmark manager
+```
 
 ### To set the database up from scratch
 
