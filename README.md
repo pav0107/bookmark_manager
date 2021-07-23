@@ -22,6 +22,12 @@ So that I can save a website
 I would like to add the site's address and title to bookmark manager
 ```
 
+```
+As a user
+So that I only have bookmarks that work
+I only want to add valid URLs
+```
+
 ### User story for deleting bookmarks
 
 ```

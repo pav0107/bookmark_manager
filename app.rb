@@ -1,12 +1,13 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
+require 'sinatra/flash'
 require './lib/bookmark'
 require './database_connection_setup'
+require 'uri'
 
 class BookmarkManager < Sinatra::Base
-  configure :development do
-    register Sinatra::Reloader
-  end
+  enable :sessions, :method_override
+  register Sinatra::Flash
 
   get '/' do
     'Testing infrastructure working!'
@@ -21,14 +22,9 @@ class BookmarkManager < Sinatra::Base
     erb :'bookmarks/new'
   end
 
-  # post '/bookmarks' do
-  #   url = params['url']
-  #   connection = PG.connect(dbname: 'bookmark_manager_test')
-  #   connection.exec("INSERT INTO bookmarks (url) VALUES('#{url}')")
-  #   redirect '/bookmarks'
-  # end
   post '/bookmarks' do
     Bookmark.create(url: params[:url], title: params[:title])
+    flash[:notice] = "You must submit a valid URL." unless Bookmark.create(url: params[:url], title: params[:title])
     redirect '/bookmarks'
   end
 
